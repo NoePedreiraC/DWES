@@ -47,12 +47,7 @@
 :construction: Proyecto en construcción :construction:
 </h4> 
 
-
-
-| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/camilafernanda) |
+| [![Noe Pedreira(1)](https://github.com/NoePedreiraC/DWES/assets/145000797/8957e8a9-3b68-46b8-8c53-2fc74a63a068) <br><sub>Noé Pedreira Centoira</sub>]([https://github.com/NoePedreiraC](https://github.com/NoePedreiraC)) |
 | :---: |
-https://github.com/NoePedreiraC
 
-| [<img src="![1695321398842](https://github.com/NoePedreiraC/DWES/assets/145000797/b6805ef0-6228-4948-a394-9e553f0b1b16)
-"width=115> <br><sub>Noé Pedreira Centoira</sub>]([https://github.com/NoePedreiraC](https://github.com/NoePedreiraC)) |
-| :---: |
+
