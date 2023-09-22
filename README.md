@@ -23,30 +23,44 @@
 
 * [Estado del proyecto](#estado)
 
-* [Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
-
 * [Acceso al proyecto](#acceso-proyecto)
 
 * [Tecnologías utilizadas](#tecnologías-utilizadas)
 
-* [Personas Contribuyentes](#personas-contribuyentes)
-
-* [Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
-
 * [Licencia](#licencia)
 
-* [Conclusión](#conclusión)
+* [Autor](#autor)
 
 ## Descripción
   <h3 align="center">
 ➡️ Descripción del proyecto ⬅️:
 </h3> 
+<p align="justify">
+ Esto es un proyecto de ejemplo para futuros proyectos, en este apartado se indicará una descripción sobre el proyecto, caracteristicas y funciones.</p>
 
 ## Estado
   <h4 align="center">
 :construction: Proyecto en construcción :construction:
 </h4> 
 
+## Acceso-proyecto
+\## 📁 Acceso al proyecto
+
+**Aquí se implementará todos los enlaces para ver el proyecto**
+
+\## 🛠️ Abre y ejecuta el proyecto
+
+**Aquí se pondran las instrucciones para descargar el proyecto**
+
+## Tecnologías-utilizadas
+
+Aquí se implementará todos las tecnologias utilizadas en el proyecto
+
+## licencia
+
+Aquí se mostrarán las licincias utilizadas en el proyecto
+
+## Autor
 | [![Noe Pedreira(1)](https://github.com/NoePedreiraC/DWES/assets/145000797/8957e8a9-3b68-46b8-8c53-2fc74a63a068) <br><sub>Noé Pedreira Centoira</sub>]([https://github.com/NoePedreiraC](https://github.com/NoePedreiraC)) |
 | :---: |
 
