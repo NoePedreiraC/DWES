@@ -13,6 +13,6 @@
 	}
 	<?php
 	</p>
-   >/body>
+   </body>
 </html>
 

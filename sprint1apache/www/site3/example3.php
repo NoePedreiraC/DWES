@@ -15,6 +15,6 @@
 	echo "Disfruta de tu tiempo!!";
 	}
 	?>
-   >/body>
+   </body>
 </html>
 

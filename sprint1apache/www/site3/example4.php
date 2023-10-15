@@ -28,6 +28,6 @@
 	echo "<td>" ,$valor."</td>";
 	echo "<td>" mensaje($valor)."</td>";
 	echo"</tr>";
-   >/body>
+   </body>
 </html>
 
