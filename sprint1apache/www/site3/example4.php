@@ -4,7 +4,7 @@
 	<?php
 	$edad=$_GET["edad"];
 
-	function edad-en_5_annos($edad) {
+	function edad_en_5_annos($edad) {
 
 	return $edad +5;
 	}
@@ -26,8 +26,9 @@
 	foreach ($lista as $valor){
 	echo "<tr>";
 	echo "<td>" ,$valor."</td>";
-	echo "<td>" mensaje($valor)."</td>";
+	echo "<td>".mensaje($valor)."</td>";
 	echo"</tr>";
+	}
+	?>
    </body>
 </html>
-

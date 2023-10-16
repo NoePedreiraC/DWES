@@ -4,7 +4,7 @@
 	<?php
 	$edad=$_GET["edad"];
 
-	function edad-en_10_annos($edad) {
+	function edad_en_10_annos($edad) {
 
 	return $edad +10;
 	}
