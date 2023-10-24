@@ -62,10 +62,14 @@ while ($row = mysqli_fetch_array($result)) {
     echo '<br>';
     echo $row['4'];
     echo '<br>';
-echo "<a href='/home/pra/compartido/detail.php?peliculas_id={}'> $id Detalles</a>";
+    echo "<a href='detail.php?cancion_id={$row['id']}'>Detalles</a>";
+//echo "<a href='/home/pra/compartido/detail.php?cancion_id='.$row['id'].'>'.$row['id'] Detalles</a>";
 echo "<hr>";
 
 }
 
 mysqli_close($db); 
 ?>
+
+http://localhost:8083/detail.php?cancion
+
