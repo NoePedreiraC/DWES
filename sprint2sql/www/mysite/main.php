@@ -64,9 +64,7 @@ while ($row = mysqli_fetch_array($result)) {
     echo '<br>';
     echo "<a href='detail.php?cancion_id={$row['id']}'>Detalles</a>";
 echo "<hr>";
-
 }
-
 mysqli_close($db); 
 ?>
 
