@@ -6,8 +6,10 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 <?php
 $cancion_id = $_POST['cancion_id'];
 $comentario = $_POST['new_comment'];
-$query = "INSERT INTO tComentarios(comentario, cancion_id, usuario_id)
-VALUES ('".$comentario."',".$cancion_id.",NULL)";
+$now = new DateTime('now');
+$now = $now-> format ('ymd');
+$query = "INSERT INTO tComentarios(comentario, cancion_id, usuario_id,fecha)
+VALUES ('".$comentario."',".$cancion_id.",NULL,".$now.")";
 mysqli_query($db, $query) or die('Error');
 echo "<p>Nuevo comentario ";
 echo mysqli_insert_id($db);

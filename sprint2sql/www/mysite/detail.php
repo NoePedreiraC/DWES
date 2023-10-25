@@ -14,6 +14,7 @@ $only_row = mysqli_fetch_array($result);
 echo '<h1>'.$only_row['nombre'].'</h1>';
 echo '<img src='.$only_row['url_imagen'].'></img>';
 echo '<h2>'.$only_row['genero'].'</h2>';
+
 ?>
 <h3>Comentarios:</h3>
 <ul>
@@ -22,6 +23,7 @@ $query2 = 'SELECT * FROM tComentarios WHERE cancion_id='.$cancion_id;
 $result2 = mysqli_query($db, $query2) or die('Query error');
 while ($row = mysqli_fetch_array($result2)) {
 echo '<li>'.$row['comentario'].'</li>';
+echo '<h3>'.$row['fecha'].'</h3> ' ;
 }
 
 mysqli_close($db);
