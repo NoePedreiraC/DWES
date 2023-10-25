@@ -1,10 +1,11 @@
 <?php
+// Establecer una conexión a la base de datos MySQL con los credenciales proporcionados
 $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 ?>
 <html>
 <head>
-    
     <style>
+	    /* Estilos CSS para la página web */
         body {
             font-family: "Roboto", sans-serif;
             background-color: grey;
@@ -43,16 +44,18 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 </head>
 <body>
 <h1>Conexión establecida</h1>
-
+<!-- Título de la página -->
 <title>JUEGOS</title>
+	<!-- Descripción de la página -->
     <h3>Una selección de cinco canciones, su título, imagen del álbun, género al que pertenece y duración en segundos. Además de un enlace con información extra.</h3><br>
 
 <?php
 // Lanzar una query
 $query = 'SELECT * FROM tCanciones';
+// Ejecutar la consulta SQL en la base de datos
 $result = mysqli_query($db, $query) or die('Query error');
 mysqli_query($db, $query) or die('Query error');
-// Recorrer el resultado
+// Recorrer el resultado y mostrar la información de las canciones
 while ($row = mysqli_fetch_array($result)) {
     echo $row['nombre'];
     echo '<br>';
@@ -65,6 +68,7 @@ while ($row = mysqli_fetch_array($result)) {
     echo "<a href='detail.php?cancion_id={$row['id']}'>Detalles</a>";
 echo "<hr>";
 }
+// Cerrar la conexión a la base de datos
 mysqli_close($db); 
 ?>
 
