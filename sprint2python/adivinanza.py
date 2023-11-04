@@ -1,4 +1,6 @@
- # Definimos las adivinanzas y las opciones en un diccionario
+import random
+
+# Definimos las adivinanzas y las opciones en un diccionario
 adivinanzas = {
     1: {
         'pregunta': "¿Qué animal camina en cuatro patas por la mañana, en dos patas al mediodía y en tres patas por la noche?",
@@ -17,7 +19,7 @@ adivinanzas = {
             'c': 'Un tenedor'
         },
         'respuesta_correcta': 'a'
-    },
+    }, 
     3: {
         'pregunta': "Es redonda como la luna, pero siempre llena de estrellas, ¿qué es?",
         'opciones': {
@@ -29,16 +31,20 @@ adivinanzas = {
     }
 }
 
+# Obtener dos adivinanzas únicas de forma aleatoria
+adivinanza_ids = random.sample(list(adivinanzas.keys()), 2)
+
 # Inicializamos la puntuación del usuario
 puntuacion = 0
 
-# Iteramos a través de las adivinanzas
-for num_adivinanza, adivinanza_info in adivinanzas.items():
+# Iteramos a través de las adivinanzas seleccionadas
+for adivinanza_id in adivinanza_ids:
+    adivinanza_info = adivinanzas[adivinanza_id]
     pregunta = adivinanza_info['pregunta']
     opciones = adivinanza_info['opciones']
 
     # Imprimimos la adivinanza y las opciones
-    print(f"\nAdivinanza {num_adivinanza}:\n{pregunta}")
+    print(f"\nAdivinanza {adivinanza_id}:\n{pregunta}")
     for opcion, descripcion in opciones.items():
         print(f'({opcion}) {descripcion}')
 
