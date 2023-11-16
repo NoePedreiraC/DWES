@@ -4,29 +4,28 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 ?>
 <html>
 <head>
-    <style>
-	    /* Estilos CSS para la página web */
+<style>
+        /* Estilos CSS para la página web */
         body {
             font-family: "Roboto", sans-serif;
             background-color: grey;
-	   
-	    color: #000000;
-	    max-width: 800px;
-	    margin: 0 auto;
-	    padding: 20px;
-	    font-weight: bold;
+            color: #000000;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-weight: bold;
         }
         h1 {
             font-weight: bold;
             text-align: center;
             color:blue;
         }
-	
-	h3 {
-	font-weight: bold;
-	text-align: center;
-	color: white;
-}
+        
+        h3 {
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
         .comment {
             border: 1px solid #fff;
             margin: 10px;
@@ -37,9 +36,19 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
         img {
             max-width: 500px;
             max-height: 5000px;
-       	    display: block;
-	    margin: 0 auto;
-	 }
+            display: block;
+            margin: 0 auto;
+            transition: opacity 0.5s ease; /* Agregamos una transición para la animación de fade-in */
+        }
+        img:hover {
+            opacity: 0.7; /* Cambiamos la opacidad al hacer hover */
+        }
+        .song-info {
+            transition: opacity 0.5s ease; /* Agregamos una transición para la animación de fade-in */
+        }
+        .song-info:hover {
+            opacity: 0.7; /* Cambiamos la opacidad al hacer hover */
+        }
     </style>
 </head>
 <body>
