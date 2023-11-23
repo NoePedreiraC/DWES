@@ -19,3 +19,25 @@ def devolver_canciones (request):
 		diccionario['duracion'] = fila_sql.duracion
 		respuesta_final.append(diccionario)
 	return JsonResponse(respuesta_final, safe=False)
+
+def devolver_canciones_por_id (request, id_solicitado):
+	cancion = Tcanciones.objects.get (id= id_solicitado)
+	comentarios = cancion.tcomentarios_set.all()
+	lista_comentarios = []
+	for lista_comentarios_sql in comentarios:
+		diccionario = {}
+		diccionario['id'] = lista_comentarios_sql.id
+		diccionario['comentario'] = lista_comentarios_sql.comentario
+		diccionario['cancion_id'] = lista_comentarios_sql.cancion_id
+		diccionario['usuario_id'] = lista_comentarios_sql.usuario_id
+		diccionario['fecha'] = lista_comentarios_sql.fecha
+		lista_comentarios.append(diccionario)
+	resultado = {
+		'id': cancion.id,
+		'comentario': cancion.nombre,
+		'cancion_id': cancion.url_imagen,
+		'genero': cancion.genero,
+		'usuario_id': cancion.duracion,
+		'fecha': lista_comentarios
+	}
+	return JsonResponse(resultado, json_dumps_params={'ensure_ascii':False})
